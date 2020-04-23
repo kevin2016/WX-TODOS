@@ -1,0 +1,21 @@
+<view class="container">
+<!-- 新增todos -->
+  <view class="header"> 
+    <image src="../../assets/plus.png" class="plus" catchtap="addTodosHandle"></image>
+    <input class="new-todo" placeholder="Anything here" value="{{ input }}"></input>
+  </view>
+<!-- todos list -->
+  <view class="todos" wx:for="{{ todos }}">
+    <view class="item" catchtap="toggleHandle">
+      <icon type="{{ item.completed? 'success':'circle' }}"></icon>
+      <text class="name">{{ item.name }}</text>
+      <icon type="clear"></icon>
+    </view>
+  </view>
+   <!-- footer -->
+   <view class="footer">
+      <text>Toggle All</text>
+      <text>2 items left</text>
+      <text>Clear completed</text>
+   </view>
+</view>

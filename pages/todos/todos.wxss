@@ -1,0 +1,44 @@
+.container{
+  border-top: 1rpx solid #e0e0e0;
+}
+.header{
+  display: flex;
+  border: 1rpx solid #e0e0e0;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 5rpx #e0e0e0;
+  margin-bottom: 20rpx;
+}
+.container .plus{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.todos{
+  border: 1rpx solid #e0e0e0;
+  border-radius: 10rpx;
+}
+.todos .item{
+  display: flex;
+  border-bottom: 1rpx solid #e0e0e0;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 0 5rpx #e0e0e0;
+}
+.todos icon{
+  padding-right: 20rpx;
+}
+.todos .item:last-child{
+  border-bottom:0 ;
+}
+
+.item text{
+  flex: 1;
+}
+
+.footer{
+  font-size: 25rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+}
